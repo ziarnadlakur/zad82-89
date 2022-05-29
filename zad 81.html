@@ -1,0 +1,33 @@
+<html>
+<head>
+<script language="JavaScript">
+    function Przycisk1()
+    {
+    pokaz1.innerHTML="Ostatnio zmodyfikowany : "+document.lastModified;
+    }
+    function Przycisk2()
+    {
+    dzis = new Date()
+    pokaz2.innerHTML="<br>Aktualna data : "+dzis.getMonth()+1+"."+dzis.getDate()+"."+dzis.getFullYear();
+    }
+    Function Przycisk3()
+    {
+    dzis = new Date()
+    pokaz3.innerHTML="<br>Aktualny czas: "+dzis.getHours()+":"+dzis.getMinutes();
+    }
+    </script>
+    </head>
+    <body>
+        <form>
+            <a onclick="Przycisk1(' ')"><img src="p1.jpg" alt="Przycisk1()" border="0" onmouseover="this.src = 'p2.jpg ">
+            <a onclick="Przycisk1(' ')"><img src="p2.jpg" alt="Przycisk2()" border="0" onmouseover="this.src = 'p4.jpg ">
+            <a onclick="Przycisk1(' ')"><img src="p3.jpg" alt="Przycisk3()" border="0" onmouseover="this.src = 'p6.jpg "> 
+            </form>
+            <table>
+            <tr id="pokaz1"></tr>
+            <tr id="pokaz2"></tr>
+            <tr id="pokaz3"></tr>
+            </table>
+        </body>
+        </html>
+        
